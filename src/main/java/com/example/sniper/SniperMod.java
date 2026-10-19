@@ -23,7 +23,7 @@ public class SniperMod implements ClientModInitializer {
     static long maxPay = 50000, increment = 500, auctionMs = 30000, fireBeforeEndMs = 1300, streamDelayMs = 3500;
     static boolean dryRun = true, requireStreamerInLine = true;
     // Group 1 must capture the amount. ADJUST to the real chat format!
-    static Pattern payRegex = Pattern.compile("paid .*?\\$([\\d,.]+\\s*[kmb]?)", Pattern.CASE_INSENSITIVE);
+       static Pattern payRegex = Pattern.compile("paid\\s*\\$\\s*([\\d,.]+\\s*[kmb]?)", Pattern.CASE_INSENSITIVE);
 
     // ---- state ----
     static long top = 0, startedAt = 0;
