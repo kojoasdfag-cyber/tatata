@@ -75,7 +75,8 @@ public class SniperMod implements ClientModInitializer {
         say("SENT: /" + cmd);
     }
 
-    static void onChat(String msg) {
+        static void onChat(String msg) {
+        if (msg.startsWith("[Sniper]")) return;
         if (showChat) say("CHAT: " + msg);
         if (!running) return;
         if (requireStreamerInLine && !msg.toLowerCase().contains(streamer.toLowerCase())) return;
