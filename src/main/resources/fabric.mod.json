@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "donutsniper",
+  "version": "${version}",
+  "name": "Donut Sniper",
+  "description": "Client-side auction helper (dry run by default).",
+  "authors": ["Me"],
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.sniper.SniperMod"] },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
